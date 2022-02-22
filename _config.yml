@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
+title: Manage UPI payments better with Kilvish
+url: "http://kilvish.in"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -16,7 +16,7 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Frisco Template
+  name: Kilvish
   links:
     - https://github.com/CloudCannon/frisco-jekyll-template
 
@@ -49,11 +49,10 @@ paginate: 10
 paginate_path: "/blog/:num/"
 
 jekyll-archives:
-  enabled: ['categories']
+  enabled: ["categories"]
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "staff_members"
     values:
@@ -62,13 +61,11 @@ defaults:
           width: 440
           height: 440
           uploads_dir: "/images/staff_members"
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       type: "posts"
     values:
       layout: "post"
@@ -82,13 +79,11 @@ defaults:
           width: 1500
           height: 2000
           uploads_dir: "/images/post_uploads"
-  -
-    scope:
+  - scope:
       path: "contact-success.html"
     values:
       layout: "page"
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
