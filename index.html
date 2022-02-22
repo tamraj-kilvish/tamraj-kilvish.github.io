@@ -1,32 +1,38 @@
 ---
 title: Home
 description: The latest app to help you find new friends with common interests.
-image: https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png
+image: /images/balance.png
 bottom_image: https://unsplash.it/2000/1322?a=.png
 ---
-
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+<style>#top-hero:before {background-image: url({% include relative-src.html src=page.image %}); opacity: 0.1;  top: 0; left: 0; right: 0; height: 100%;}</style>
+<section class="hero" id="top-hero">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">All in one payment app for Indians</h1>
-			<p class="subtext editable">Pay by creating a unique url & let others involved track payments on it</p>
-			<p class="subtext editable">Categorize each expense (or the url) as food, travel, grocery etc. One click import if expense done outside platform</p>
-			<p class="subtext editable">Track group expenses against a url by adding everyone involved to it.</p>
-			<div class="cta button alt"><a href="#">Download Now</a></div>
+			<h1 class="editable">Manage UPI payments better with Kilvish</h1>
+			<ul>
+				<li class="subtext editable">Pay by creating a unique url & both you & receiver can track payments against it. Useful for recurring payments.</li>
+				<li class="subtext editable">Kilvish redirects to your favorite UPI app & consolidates all UPI expenses at one place.</li>
+				<li class="subtext editable">Tag each expense (or the url) as food, travel, grocery. Create your own tags.</li>
+				<li class="subtext editable">Track group expenses against a url by sharing it with everyone involved.</li>
+			</ul>
+			<div class="cta button alt"><a href="#bottom-hero">Check Kilvish</a></div>
 		</div>
 	</div>
-	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
 </section>
 
 <div class="content">
 	<section class="info" id="learn-more">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">Introduce yourself</h2>
-				<p class="editable">Making news friends in the adult world is hard. Frisco is the perfect filter matching you the most interesting people in your area.</p>
+				<h2 class="editable">Track/collect payment against url</h2>
+				<ul class="editable">
+					<li>Create a url & pay against it. Send url to the payer if you look to collect payment.</li>
+					<li>Both the payer & payee can track payment against the url including past payments.</li>
+					<li>Great for recurring shared household expense like paying for newspaper. Keep paying every month against the same url to keep track of all past payments.</li>
+				</ul>
 			</div>
 			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+				<img class="editable" src="/images/payment-ledger.png" alt="Screenshot" />
 			</div>
 		</div>
 	</section>
@@ -34,11 +40,15 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 	<section class="info">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">Pick your interests</h2>
-				<p class="editable">The more you tell Frisco the better it gets to know you. Frisco matches you with people who share similar interests with you.</p>
+				<h2 class="editable">Easily track recurring payment to vendors</h2>
+				<ul class="editable">
+					<li>Create url for specific vendor like newspaper delivery person.</li>
+					<li>Share the url with other household members. Any member can pay against the url. Past payments on the url will be visible to all members.</li>
+					<li>Newspaper guy can also track all past payments post signing up in the app</li>
+				</ul>
 			</div>
 			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+				<img class="editable" src="/images/recurring-payment.jpeg" alt="Screenshot" />
 			</div>
 		</div>
 	</section>
@@ -46,21 +56,56 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 	<section class="info">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">Swipe and go</h2>
-				<p class="editable">Frisco shows you cards with people who might be a good match for friendship. Swipe left to move to the next card or right to start talking.</p>
+				<h2 class="editable">Shared expense tracking through tags</h2>
+				<ul class="editable">
+					<li>Create own tags like newspaper, travel, car etc. Tag url or individual expense. Get consolidated monthly expense against each tag.</li>
+					<li>Create <b>group tags</b> like one with your flatmates. Attaching a group tag to an expense automatically shares it with same set of people. Filter expenses by group tag & see consolidated payment per person.</li> 
+					<li>Create a url/tag for a trip & everyone can pay against it. See consolidated payments & settle at the end. Bye bye shared expense apps.</li>
+				</ul>
 			</div>
 			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+				<img class="editable" src="/images/expense-tagging.png" alt="Screenshot" />
 			</div>
 		</div>
 	</section>
 
-	<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Crowdsourcing payments</h2>
+				<ul class="editable">
+					<li>Looking to book football ground & wanting to collect payment from everyone ? Do so by creating url & everyone involved can see who paid & how much.</li>
+					<li>Looking to run a crowd funding activity for a cause. Create a <b>public url</b> which hides confidential information of payers but everyone can see list of payers against it & total amount contributed.</li>
+				</ul>
+			</div>
+			<div class="image">
+				<img class="editable" src="/images/crowd-funding.png" alt="Screenshot" />
+			</div>
+		</div>
+	</section>
+
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Its Free .. 99%</h2>
+				<ul class="editable">
+					<li>It will not cost at all, ever, for paying out. Period. You can use Kilvish to keep your payments well managed. You can even import outside Kilvish payments for better accounting purpose. Consider it Tally for masses but free :-).</li>
+					<li>If you use Kilvish to collect payment, you may need to pay if you cross a certain threshold of total amount or number of transactions. We are yet to decide. But till then, it is free.</li>
+				</ul>
+			</div>
+			<div class="image">
+				<img class="editable" src="/images/android-chrome-512x512.png" alt="Screenshot" />
+			</div>
+		</div>
+	</section>
+	
+	<style>#bottom-hero:before {background-image: url({% include relative-src.html src=page.bottom_image %}); opacity: 0.1;  top: 0; left: 0; right: 0; height: 100%;}</style>
+	<section class="hero" id="bottom-hero">
 		<div class="inner-hero text-container">
 			<div class="hero-text-container">
-				<h2 class="editable">Find your buddy today</h2>
-				<p class="subtext editable">It's free, fun and an exciting way to meet new people.</p>
-				<div class="cta button alt"><a href="#">Join Now</a></div>
+				<h2 class="editable">We are still building Kilvish</h2>
+				<p class="subtext editable">We are glad to know that you liked what we doing & wanted to try Kilvish. Please use the button below to get in touch with us if you like to in the meantime.</p>
+				<div class="cta button alt"><a href="/contact/">Contact Us</a></div>
 			</div>
 		</div>
 	</section>
