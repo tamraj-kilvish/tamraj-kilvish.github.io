@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Manage UPI payments better with Kilvish
+title: India's first social payment app
 url: "http://kilvish.in"
 baseurl:
 google_analytics_key:
@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: App marketing template for Jekyll.
+description: Kilvish - India's first social payment app
 author:
   name:
   email:
