@@ -1,111 +1,470 @@
----
-title: Kilvish
-description: Manage UPI payments better with Kilvish, free payment collection, shared expense tracking
-image: /images/balance.png
-bottom_image: https://unsplash.it/2000/1322?a=.png
----
-<style>#top-hero:before {background-image: url({% include relative-src.html src=page.image %}); opacity: 0.1;  top: 0; left: 0; right: 0; height: 100%;}</style>
-<section class="hero" id="top-hero">
-	<div class="inner-hero text-container">
-		<div class="hero-text-container">
-			<h2 class="editable">Making fintech social .. for Indians <br/><small class="editable" style="font-size: 0.7em">India's first social payment app</small></h2>
-			<ul>
-				<li class="subtext editable">Request/collect payment through a Kilvish created url</li>
-				<li class="subtext editable">Kilvish consolidates all UPI expenses at one place, so that everyone involved can track past payments.</li>
-				<li class="subtext editable">You can share url with friends, or create group tags of friends & tag expenses so that everyone involved can see payments.</li>
-				<li class="subtext editable">Great for crowdsourcing payments for a cause.</li>
-			</ul>
-			<div class="cta button alt" style = "text-align: center; padding-bottom: 10px"><a href="#bottom-hero">Try Kilvish</a></div>
-		</div>
-	</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilvish - Fintech goes Social & Personal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="content">
-	<section class="info" id="learn-more">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Track/collect payment against url</h2>
-				<ul class="editable">
-					<li>Create a url & pay against it. Send url to the payer if you look to collect payment.</li>
-					<li>Both the payer & payee can track payment against the url including past payments.</li>
-					<li>Great for recurring shared household expense like paying for newspaper. Keep paying every month against the same url to keep track of all past payments.</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="/images/payment-ledger.png" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2D2D2D;
+            background: #ffffff;
+        }
 
-	<section class="info">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Easily track recurring payment to vendors</h2>
-				<ul class="editable">
-					<li>Create url for specific vendor like newspaper delivery person.</li>
-					<li>Share the url with other household members. Any member can pay against the url. Past payments on the url will be visible to all members.</li>
-					<li>Newspaper guy can also track all past payments post signing up in the app</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="/images/recurring-payment.jpeg" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-	<section class="info">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Shared expense tracking through tags</h2>
-				<ul class="editable">
-					<li>Create own tags like newspaper, travel, car etc. Tag url or individual expense. Get consolidated monthly expense against each tag.</li>
-					<li>Create <b>group tags</b> like one with your flatmates. Attaching a group tag to an expense automatically shares it with same set of people. Filter expenses by group tag & see consolidated payment per person.</li> 
-					<li>Create a url/tag for a trip & everyone can pay against it. See consolidated payments & settle at the end. Bye bye shared expense apps.</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="/images/expense-tagging.png" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
 
-	<section class="info">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Crowdsourcing payments</h2>
-				<ul class="editable">
-					<li>Looking to book football ground & wanting to collect payment from everyone ? Do so by creating url & everyone involved can see who paid & how much.</li>
-					<li>Looking to run a crowd funding activity for a cause. Create a <b>public url</b> which hides confidential information of payers but everyone can see list of payers against it & total amount contributed.</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="/images/crowd-funding.png" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
 
-	<section class="info">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">Its Free .. 99%</h2>
-				<ul class="editable">
-					<li>It will not cost at all, ever, for paying out. Period. You can use Kilvish to keep your payments well managed. You can even import outside Kilvish payments for better accounting purpose. Consider it Tally for masses but free :-).</li>
-					<li>If you use Kilvish to collect payment, you may need to pay if you cross a certain threshold of total amount or number of transactions. We are yet to decide. But till then, it is free.</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img class="editable" src="/images/android-chrome-512x512.png" alt="Screenshot" />
-			</div>
-		</div>
-	</section>
-	
-	<section class="hero" id="bottom-hero">
-		<div class="inner-hero text-container">
-			<div class="hero-text-container">
-				<h2 class="editable">We are still building Kilvish</h2>
-				<p class="subtext editable">We are glad to know that you liked what we doing & wanted to try Kilvish. Please use the button below to get in touch with us if you like to in the meantime.</p>
-				<div class="cta button alt"><a href="/contact/">Contact Us</a></div>
-			</div>
-		</div>
-	</section>
-</div>
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .hero .subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #E91E63;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #E91E63;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #E91E63;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        /* How To Section */
+        .how-to-step {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #E91E63, #C2185B);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #2D2D2D;
+        }
+
+        .step-content p {
+            font-size: 15px;
+            color: #4B4B4B;
+            line-height: 1.6;
+        }
+
+        .screenshot-placeholder {
+           
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            border-radius: 12px;
+            margin-top: 16px;
+            align-items: center;
+            justify-content: center;
+            color: #9e9e9e;
+            font-size: 14px;
+            border: 2px dashed #bdbdbd;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+
+        }
+
+        .screenshot-placeholder img {
+            width: 70%;
+            border-radius: 10px;
+        }
+
+     
+
+        /* Why Kilvish Section */
+        .why-kilvish {
+            background: #f8f8f8;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 4px solid #E91E63;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .benefit-card h3 {
+            font-size: 18px;
+            color: #E91E63;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benefit-card h3::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #E91E63;
+            color: white;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .benefit-card p {
+            font-size: 15px;
+            color: #4B4B4B;
+            line-height: 1.6;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .final-cta h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-button-secondary {
+            display: inline-block;
+            background: white;
+            color: #E91E63;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #2D2D2D;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #E91E63;
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+            
+            .hero .subtitle {
+                font-size: 16px;
+            }
+            
+            .section-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo"><img src="images/logo.png" style="width: 100px"/></div>
+            <h1>Fintech goes Social & Personal</h1>
+            <p class="subtitle">Categorise expenses your way<br>with your family & friends</p>
+            <a href="#download" class="cta-button">Download Kilvish</a>
+            <p style="font-size: small; margin-top:10px">Available only for Android as apk file (not on play store yet)</p>
+        </div>
+    </section>
+
+    <!-- How To Section -->
+    <section class="how-to">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            
+            <div class="how-to-step animate-in">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Create Tags</h3>
+                    <p>Tag is like a category for your expenses. See overall total and month-wise expense breakdown in the tag view.</p>
+                    <div class="screenshot-placeholder">
+                        <img src="images/tag-summary-view.jpeg"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="how-to-step animate-in">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Share with Others</h3>
+                    <p>Share tags with family or friends who can view expenses and attach their own transactions to the tag.</p>
+                    <div class="screenshot-placeholder">
+                        <img src="images/share-tag.jpeg"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="how-to-step animate-in">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Import from UPI</h3>
+                    <p>Import expenses from your UPI app. Kilvish automatically extracts information using OCR technology.</p>
+                    <div class="screenshot-placeholder">
+                        <img src="images/upi-import.jpeg" style="width:45%"/>
+                        <img src="images/ocr-extraction.jpeg" style="width:45%"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="how-to-step animate-in">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Get Notified</h3>
+                    <p>Receive instant notifications when someone adds or updates expenses to shared tags.</p>
+                    <div class="screenshot-placeholder">
+                        <img src="images/notification.jpeg" style="width:45%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Kilvish Section -->
+    <section class="why-kilvish">
+        <div class="container">
+            <h2 class="section-title">Why Kilvish?</h2>
+
+            <div class="benefit-card animate-in">
+                <h3>Track Expense Across People</h3>
+                <p>Perfect for families! Create a household tag to track monthly expenses when multiple family members are spending. Everyone stays informed about total household spending.</p>
+            </div>
+
+            <div class="benefit-card animate-in">
+                <h3>Track Recurring Payments</h3>
+                <p>Pay a vendor regularly? Import and tag all payments to keep them organized in one place. Share the tag with your vendor so they can also verify payment history.</p>
+            </div>
+
+            <div class="benefit-card animate-in">
+                <h3>Be More Aware of Spending</h3>
+                <p>Making too many online purchases? Seeing the total monthly and overall spending will help you think twice before making those mindless expenses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Take Control of your Expenses ?</h2>
+            <a href="#download" class="cta-button-secondary">Try Kilvish Now</a>
+            <p style="font-size: small; margin-top:10px">Available only for Android as apk file (not on play store yet)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Made with love & vibe coding using Claude AI</p>
+            <p style="margin-top: 10px;">
+               Want to ask, reach out to Ashish, phone number ( % # * # * $ % $ % <br/>
+           </p>
+            <image src="images/keyboard.png" style="height:50px"/>
+            <br/>
+            <span style="font-size:small">That is my phone number but number is converted to special character corresponding to number on keyboard :)</span>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
