@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0;url=kilvish://tag/__TAGID__">
+</head>
+<body>
+  <script>
+    const tagId = new URLSearchParams(window.location.search).get('id');
+    if (tagId) window.location.href = 'kilvish://tag/' + tagId;
+  </script>
+  <p>Opening in Kilvish... <a href="#">tap here if nothing happens</a></p>
+</body>
+</html>
